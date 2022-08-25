@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ToDoListAPI</name>
+    </assembly>
+    <members>
+        <member name="M:ToDoListAPI.Controllers.ToDoListController.List">
+            <summary>
+            Get list of all TODO items
+            If Empty, save first and then call List
+            </summary>
+            <returns></returns>      
+        </member>
+        <member name="M:ToDoListAPI.Controllers.ToDoListController.SaveTask(Common.ToDoList)">
+            <summary>
+            Save a to do item
+            </summary>
+            <param name="toDoList"></param>
+            <returns>true if added/updated successfully, false if not saved</returns>
+        </member>
+        <member name="M:ToDoListAPI.Controllers.ToDoListController.RemoveTask(System.Int32)">
+            <summary>
+            Remove item with given task id
+            </summary>
+            <param name="taskId">Id of the task to be removed</param>
+            <returns>true if removed successfully, false if the item doesn't exist</returns>
+        </member>
+    </members>
+</doc>
